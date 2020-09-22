@@ -1,6 +1,6 @@
 {
   "title": "Functional Python: Implement Immutable Data Structures",
-  "description": "Develop immutable data structures using the building blocks in Python's standard library.",
+  "description": "Prevent mutation-based bugs with tools in the Python standard library.",
   "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
