@@ -12,4 +12,4 @@ print(arr)
 arr = [1, 2, 3]
 arr[0] = -100
 print(arr)
-```{{copy}}
+```{{execute}}
