@@ -1,4 +1,4 @@
-Before we dive into things, run `ipython3` so that we can use Python.
+Before we dive into things, run `ipython3`{{execute}} so that we can use Python.
 
 What's the difference between arrays and tuples? Well, I'm sure you've used arrays like this before:
 
