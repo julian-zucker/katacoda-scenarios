@@ -2,7 +2,7 @@
   "title": "Functional Python: Implement Immutable Data Structures",
   "description": "Prevent mutation-based bugs with tools in the Python standard library.",
   "difficulty": "Intermediate",
-  "time": "15 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {

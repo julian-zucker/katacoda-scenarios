@@ -10,8 +10,7 @@ What's the difference between arrays and tuples? Well, I'm sure you've used arra
 arr = [1, 2, 3]
 arr[0] = -100
 print(arr)
-```
-{{execute}}
+```{{execute}}
 
 
 That second line, `arr[0] = -100`, means that the array is mutable. We can
@@ -44,4 +43,5 @@ tup[0][0] = "I just got mutated!"
 print(tup)
 ```{{execute}}
 
-So while our Tuples are
+So while tuples are immutable, arrays are mutable. We can use this fact to
+make immutable data structures, as you'll see the in the next section.
