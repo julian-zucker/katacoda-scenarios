@@ -2,7 +2,7 @@ Mutable data structures can be "mutated", or changed. Immutable data
 structures cannot be changed. This is useful for parallel programming, where
 you want to prevent multiple people from modifying a piece of data at the same time, and in preventing bugs.
 
-Before we dive into coding things, run `ipython3`{{execute}} so that we can use Python. (You can run things by clikcing on their text).
+Before we dive into coding things, run `python3`{{execute}} so that we can use Python. (You can run things by clicking on their text).
 
 What's the difference between arrays and tuples? Well, I'm sure you've used arrays like this before:
 

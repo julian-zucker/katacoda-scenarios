@@ -16,7 +16,7 @@ class Item(NamedTuple):
     price: int  # price in cents
 ```{{execute}}
 
-While we're at it, let's make some examples for later:    
+While we're at it, let's make some examples for later:
 
 ```
 coffee = Item(1, "Coffee", 400)
@@ -50,7 +50,7 @@ class Order(NamedTuple):
 
     def total_price(self):
         return sum(item.price for item in items)
-    
+
 assert Order(2, (coffee, biscotti)).total_price() == 675
 ```{{execute}}
 

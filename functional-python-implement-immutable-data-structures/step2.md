@@ -11,7 +11,7 @@ name.
 class Animal(NamedTuple):
     age: int
     name: str
-```{{copy}}
+```{{execute}}
 
 Okay, great. Now let's test that the constructor works.
 
