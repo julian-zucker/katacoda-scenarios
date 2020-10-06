@@ -47,7 +47,6 @@ to it, like "total_price".
 class Order(NamedTuple):
     order_id: int
     items: Tuple[Item]
-
     def total_price(self):
         return sum(item.price for item in items)
 

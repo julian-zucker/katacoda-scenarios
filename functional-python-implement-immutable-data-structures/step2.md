@@ -25,7 +25,7 @@ Now, we could have written this class in the standard Python way as well.
 
 ```
 class AnimalWithoutNamedTuple:
-    def __init__(self, age name):
+    def __init__(self, age, name):
         self.age = age
         self.name = name
 ```{{execute windows}}
@@ -54,7 +54,7 @@ birthdays! Fortunately, `NamedTuple` includes a useful builtin method,
 extending `NamedTuple`) but with one field updated. Let's try it out:
 
 ```
-birthday_pup = a1.update(age=13)
+birthday_pup = a1._replace(age=13)
 print(f"Happy {birthday_pup.age}th Birthday, {birthday_pup.name}")
 ```{{execute windows}}
 
