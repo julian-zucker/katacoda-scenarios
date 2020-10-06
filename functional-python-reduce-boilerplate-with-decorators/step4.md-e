@@ -11,7 +11,7 @@ def call_with_four_and_increment_result(func):
         return func(4) + 1
     return modified
 
-```{{execute windows}}
+```{{execute}}
 
 And a quick test:
 
@@ -23,7 +23,7 @@ def f(x):
 print(f(6))
 print(f(8))
 print(f(9))
-```{{execute windows}}
+```{{execute}}
 
 Awesome! This trick is quite useful for writing decorators that pass in
 database sessions to other functions, or when you want to check some schema

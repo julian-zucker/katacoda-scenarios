@@ -1,7 +1,7 @@
 Python provides this wonderful built-in tool, called `NamedTuple`. Let's go
 ahead and import it:
 
-`from typing import NamedTuple`{{execute windows}}
+`from typing import NamedTuple`{{execute}}
 
 Now, what is a `NamedTuple`? It's a class you can extend, and it makes a
 constructor for you. Let's create a simple class Animal, with an age and a
@@ -18,7 +18,7 @@ Okay, great. Now let's test that the constructor works.
 ```
 a = Animal(12, "Fido")
 print(f"The animal {a.name} is {a.age} years old")
-```{{execute windows}}
+```{{execute}}
 
 
 Now, we could have written this class in the standard Python way as well.
@@ -36,7 +36,7 @@ one hidden advantage of named tuples is that they are immutable.
 ```
 a1 = Animal(12, "Fido")
 a1.age = 13
-```{{execute windows}}
+```{{execute}}
 
 Fido's birthday will have to wait. But if we recreate this dog using the other
 class, it will work!
@@ -45,7 +45,7 @@ class, it will work!
 a2 = AnimalWithoutNamedTuple(12, "Fido")
 a2.age = 13
 print(f"Happy {a2.age}th Birthday, {a2.name}")
-```{{execute windows}}
+```{{execute}}
 
 Now we have one immutable class, and one mutable class. But it looks like we
 can't do anything useful with the immutable class – we can't give animals
@@ -56,7 +56,7 @@ extending `NamedTuple`) but with one field updated. Let's try it out:
 ```
 birthday_pup = a1.update(age=13)
 print(f"Happy {birthday_pup.age}th Birthday, {birthday_pup.name}")
-```{{execute windows}}
+```{{execute}}
 
 That's pretty neat! Now we have data that is immutable, but we can also create
 different versions of it to keep track of change over time. Now we don't have

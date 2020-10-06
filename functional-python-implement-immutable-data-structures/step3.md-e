@@ -14,7 +14,7 @@ class Item(NamedTuple):
     id: int
     name: str
     price: int  # price in cents
-```{{execute windows}}
+```{{execute}}
 
 While we're at it, let's make some examples for later:
 
@@ -22,7 +22,7 @@ While we're at it, let's make some examples for later:
 coffee = Item(1, "Coffee", 400)
 latte = Item(2, "Latte", 550)
 biscotti = Item(3, "Biscotti", 275)
-```{{execute windows}}
+```{{execute}}
 
 Now we can represent items, we'll need to represent a series of them:
 
@@ -32,13 +32,13 @@ from typing import Tuple
 class Order(NamedTuple):
     order_id: int
     items: Tuple[Item]
-```{{execute windows}}
+```{{execute}}
 
 And again, an example:
 
 ```
 order = Order(1, (coffee, biscotti))
-```{{execute windows}}
+```{{execute}}
 
 Now we have built a complex, immutable data structure. We can add some methods
 to it, like "total_price".
@@ -52,7 +52,7 @@ class Order(NamedTuple):
         return sum(item.price for item in items)
 
 assert Order(2, (coffee, biscotti)).total_price() == 675
-```{{execute windows}}
+```{{execute}}
 
 There you have it. A fully-functional data structure representing orders, and
 completely immutable.

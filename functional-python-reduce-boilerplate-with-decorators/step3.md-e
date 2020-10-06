@@ -19,7 +19,7 @@ def timing(func):
         return output
     return modified
 
-```{{execute windows}}
+```{{execute}}
 
 This function first records the starting time. Then, it calls the function
 its decorating, and computes the difference between the current time (after
@@ -36,14 +36,14 @@ def sleepy(x, foo=None):
     sleep(1)
     return 3
 
-```{{execute windows}}
+```{{execute}}
 
 Then, we can call it to see what we get.
 
 ```
 sleepy(4)
 sleepy(5)
-```{{execute windows}}
+```{{execute}}
 
 Awesome! Now we have a decorator we can add to any function to record its
 timing. This is quite useful when you have existing code you want to
@@ -62,7 +62,7 @@ def debugging(func):
         return output
     return modified
 
-```{{execute windows}}
+```{{execute}}
 
 And we can redefine sleepy with the new decorator
 
@@ -74,7 +74,7 @@ def sleepy(x, foo=None):
     sleep(1)
     return 3
 
-```{{execute windows}}
+```{{execute}}
 
 And test it just like before:
 
@@ -82,7 +82,7 @@ And test it just like before:
 ```
 sleepy(1)
 sleepy("hello", foo="bar")
-```{{execute windows}}
+```{{execute}}
 
 I've used functions like this to help me debug before. Hopefully knowing how
 to use decorators can help you debug things too!

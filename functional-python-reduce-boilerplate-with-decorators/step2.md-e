@@ -7,7 +7,7 @@ python.
 
 ```
 python3
-```{{execute windows}}
+```{{execute}}
 
 We have to define a decorator, which will take in a function to modify.
 Let's call it `print_test`, because it's testing that decorators work by
@@ -20,7 +20,7 @@ def print_test(func):
         return func(*args, **kwargs)
     return modified
 
-```{{execute windows}}
+```{{execute}}
 
 So, this function will print `'decorator used'` and then return whatever the
 function it is decorating returned. The `*args, **kwargs` bit means that
@@ -34,13 +34,13 @@ We can test our decorator by first defining a decorated function:
 def f(x):
     return x + 3
 
-```{{execute windows}}
+```{{execute}}
 
 And then calling that function:
 
 ```
 f(4)
-```{{execute windows}}
+```{{execute}}
 
 Okay, awesome! That's a basic decorator, which wraps a function and modifies
 it! In the next section, we will write a more useful decorator.

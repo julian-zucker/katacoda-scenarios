@@ -5,7 +5,7 @@ Let's import itertools.
 
 ```
 from itertools import *
-```{{execute windows}}
+```{{execute}}
 
 The first tool we'll look at is `repeat`, which takes in a value and a number,
 and produces an iterator containing that value that many times. Here's an
@@ -13,7 +13,7 @@ example.
 
 ```
 list(repeat(10, 3))
-```{{execute windows}}
+```{{execute}}
 
 We still have to wrap the output in `list` in order to see the elements, but
 it is clear that the above code repeats 10 three times. Next let's move on to
@@ -23,7 +23,7 @@ range if two numbers are provided.
 
 ```
 list(islice(repeat(10, 10), 3))
-```{{execute windows}}
+```{{execute}}
 
 Here, we take only the first three elements from the `repeat` object, which
 would have 10 elements otherwise. And, we can take the fourth through seventh
@@ -31,7 +31,7 @@ objects just as easily:
 
 ```
 list(islice(repeat(10, 10), 4, 7))
-```{{execute windows}}
+```{{execute}}
 
 Although because it's all 10's, there is no difference between the two. Now that
 we know how to get elements out of an iterator, we can start playing with
@@ -44,7 +44,7 @@ plus three, and so one. Let's try it out
 
 ```
 list(islice(count(10), 12))
-```{{execute windows}}
+```{{execute}}
 
 Even though the iterator is technically infinite, it won't cause any problems
 if we only take a fixed number of elements with islice. If we tried to write a
@@ -56,7 +56,7 @@ through its elements.
 
 ```
 list(islice(cycle("ABCD"), 12))
-```{{execute windows}}
+```{{execute}}
 
 The above code repeats the letters of `"ABCD"`, and take the first 12 of them.
 
@@ -68,13 +68,13 @@ iterator. Here's an example:
 
 ```
 list(product([1, 2, 3, 4], "ABC"))
-```{{execute windows}}
+```{{execute}}
 
 You can also get the product of an iterator with itself:
 
 ```
 list(product("ABC", repeat=2))
-```{{execute windows}}
+```{{execute}}
 
 Although notice that you have to specify `repeat=2` in order to get tuples
 with two elements in them.
@@ -84,13 +84,13 @@ iterable:
 
 ```
 list(permutations([1, 2, 3]))
-```{{execute windows}}
+```{{execute}}
 
 For combinations, you have to provide the length of each combination that you
 want.
 ```
 list(combinations("ABCDE", r=2))
-```{{execute windows}}
+```{{execute}}
 
 These combinators are useful for double-checking your combinatorics math
 homework, and also seeing if any combination of elements has a certain

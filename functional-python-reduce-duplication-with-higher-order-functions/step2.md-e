@@ -8,7 +8,7 @@ def make_adder(n):
         return x + n
     return adder
 
-```{{execute windows}}
+```{{execute}}
 
 Okay, let's break down that code snippet. `make_adder` takes one parameter,
 `n`, and then uses that parameter in a function it defines. The function
@@ -20,20 +20,20 @@ How do we use this thing, though? Well, it's a function, so we can call it:
 
 ```
 add_four = make_adder(4)
-```{{execute windows}}
+```{{execute}}
 
 And then we can use the function we created!
 
 ```
 assert add_four(0) == 4
 assert add_four(4) == 8
-```{{execute windows}}
+```{{execute}}
 
 We can even call it directly after creating it, if we want:
 
 ```
 assert make_adder(10)(30) == 40
-```{{execute windows}}
+```{{execute}}
 
 Now we know how to define higher-order functions that return functions. What
 about higher-order functions that take functions as their input?

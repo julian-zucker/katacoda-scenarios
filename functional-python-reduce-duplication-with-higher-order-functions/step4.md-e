@@ -33,7 +33,7 @@ data = [
         "salary": "123",
     },
 ]
-```{{execute windows}}
+```{{execute}}
 
 
 And we have a few operations we want to do in order to filter and clean the
@@ -53,28 +53,28 @@ Ignore any person with an empty name
 def has_empty_name(person):
     return person['name'] == ''
 
-```{{execute windows}}
+```{{execute}}
 
 Ignore any person with an age over 100
 ```
 def has_age_over_100(person):
     return person['age'] > 100
 
-```{{execute windows}}
+```{{execute}}
 
 Make sure ages are numbers, not strings
 ```
 def convert_age_to_number(person):
     person['age'] = float(person['age'])
 
-```{{execute windows}}
+```{{execute}}
 
 Make sure salaries are numbers, not strings
 ```
 def convert_salary_to_number(person):
     person['salary'] = float(person['salary'])
 
-```{{execute windows}}
+```{{execute}}
 
 Convert salaries which are less than $1000 from hourly rates to yearly
 ```
@@ -83,7 +83,7 @@ def convert_salary_to_yearly(person):
         # 2000 work hours in the year, roughly
         person['salary'] = 2000 * person['salary']
 
-```{{execute windows}}
+```{{execute}}
 
 Okay, so we have these five tiny functions which do parts of what we want. How
 can we conver them into something that works on this data?
@@ -113,7 +113,7 @@ def clean_data(data, cleaners, filters):
                 break
         out.append(item)
     return out
-```{{execute windows}}
+```{{execute}}
 
 Okay, let's try out this function!
 
@@ -121,7 +121,7 @@ Okay, let's try out this function!
 clean_data(data,
     cleaners=[convert_age_to_number, convert_salary_to_number, convert_salary_to_yearly],
     filters=[has_empty_name, has_age_over_100])
-```{{execute windows}}
+```{{execute}}
 
 This function is easy to understand, and so are all the helpers. And, if you
 want to clean the data with a different set of cleaners or filters, it's very

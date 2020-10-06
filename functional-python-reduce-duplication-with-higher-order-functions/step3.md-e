@@ -13,7 +13,7 @@ def apply(f, arg):
 
 assert apply(add_three, 4) == 7
 assert apply(add_four, 8) == 12
-```{{execute windows}}
+```{{execute}}
 
 This is a pretty silly function because `apply(f, arg)` is the same as
 `f(arg)`, but it requires more typing. However, it's a useful example: we can see
@@ -36,7 +36,7 @@ def filter_map(arr, predicate, mapper):
     return out
 
 assert filter_map([1,2,3,4], lambda x: x > 2, add_three) == [6, 7]
-```{{execute windows}}
+```{{execute}}
 
 Or, written another way:
 
@@ -45,7 +45,7 @@ def filter_map(arr, predicate, mapper):
     return [mapper(item) for item in arr if predicate(item)]
 
 assert filter_map([1,2,3,4], lambda x: x > 2, add_three) == [6, 7]
-```{{execute windows}}
+```{{execute}}
 
 `filter_map` could be useful in some scenarios, but list comprehensions will
 probably be more useful. In the next step, we'll look at some more practical

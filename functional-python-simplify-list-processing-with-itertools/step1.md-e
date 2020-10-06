@@ -11,7 +11,7 @@ will add 3. Let's start up python:
 
 ```
 python3
-```{{execute windows}}
+```{{execute}}
 
 And then let's define that function!
 
@@ -19,21 +19,21 @@ And then let's define that function!
 def add_three(x):
     return x + 3
 
-```{{execute windows}}
+```{{execute}}
 
 Now that we have this function, let's write down the list we want to apply it
 to.
 
 ```
 arr = [1, 2, 3, 4]
-```{{execute windows}}
+```{{execute}}
 
 Finally, we can use `map` to apply the function to each element:
 
 
 ```
 map(add_three, arr)
-```{{execute windows}}
+```{{execute}}
 
 That doesn't look quite right. It's a `map` object instead of a list? Python's
 map is implemented in this way so that it can improve the performance of some
@@ -45,7 +45,7 @@ all in a call to `list`, to convert the type again.
 
 ```
 list(map(add_three, arr))
-```{{execute windows}}
+```{{execute}}
 
 Much better, this is looking more like what I would expect. Anyway, that's how
 to use map! Next, on to `filter`.
@@ -61,7 +61,7 @@ function!
 def is_lowercase(str):
     return str.islower()
 
-```{{execute windows}}
+```{{execute}}
 
 This may seem like a silly function to write, because all it does is call one
 other method, but filter requires a function, not a method, so we have to write it.
@@ -69,19 +69,19 @@ other method, but filter requires a function, not a method, so we have to write 
 Let's just define our array of strings
 ```
 arr = ["low", "HIGH", "MiXeD"]
-```{{execute windows}}
+```{{execute}}
 
 And then we can filter, keeping only the lowercase ones:
 
 ```
 filter(is_lowercase, arr)
-```{{execute windows}}
+```{{execute}}
 
 Oops! Same deal as above – this is a generator, so we'll have to convert it to
 a list to see the contents.
 ```
 list(filter(is_lowercase, arr))
-```{{execute windows}}
+```{{execute}}
 
 
 And just like that, we know how to use filter and map! In the next step, we'll
