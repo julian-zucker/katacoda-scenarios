@@ -35,7 +35,8 @@ print(tup)
 ```{{execute}}
 
 So while our tuples can't be mutated, their elements can. The solution? Make
-their elements tuples as well!
+their elements tuples as well! This can be accomplished by changing the square
+brackes (`[]`) to parentheses (`()`)
 
 ```
 tup = ((), (1), (1, 2))

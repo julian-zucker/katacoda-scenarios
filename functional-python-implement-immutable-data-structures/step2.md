@@ -11,7 +11,7 @@ name.
 class Animal(NamedTuple):
     age: int
     name: str
-```{{execute}}
+```{{execute windows}}
 
 Okay, great. Now let's test that the constructor works.
 
@@ -28,7 +28,7 @@ class AnimalWithoutNamedTuple:
     def __init__(self, age name):
         self.age = age
         self.name = name
-```{{execute}}
+```{{execute windows}}
 
 We saved one whole line of code! ... that doesn't seem that impressive. But
 one hidden advantage of named tuples is that they are immutable.
