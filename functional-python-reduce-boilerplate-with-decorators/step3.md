@@ -17,8 +17,8 @@ def timing(func):
         output = func(*args, **kwargs)
         print(f'{func.__name__} took {datetime.now() - start_time}')
         return output
-
     return modified
+
 ```{{execute}}
 
 This function first records the starting time. Then, it calls the function
@@ -35,6 +35,7 @@ from time import sleep
 def sleepy(x, foo=None):
     sleep(1)
     return 3
+
 ```{{execute}}
 
 Then, we can call it to see what we get.
@@ -59,8 +60,8 @@ def debugging(func):
         output = func(*args, **kwargs)
         print(f'{func.__name__} called on {args}, {kwargs}, returning {output}. It took {datetime.now() - start_time}.')
         return output
-
     return modified
+
 ```{{execute}}
 
 And we can redefine sleepy with the new decorator
@@ -72,6 +73,7 @@ from time import sleep
 def sleepy(x, foo=None):
     sleep(1)
     return 3
+
 ```{{execute}}
 
 And test it just like before:

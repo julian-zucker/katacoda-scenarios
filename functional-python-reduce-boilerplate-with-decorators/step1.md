@@ -60,5 +60,4 @@ def temp_function():
 function = decorator(function)
 ```
 
-Now that we know how to use decorators, let's move on to writing out own!
-
+Now that we know how to use decorators, let's move on to writing our own!

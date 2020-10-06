@@ -9,10 +9,9 @@ For example, here's a decorator which always calls its wrapped function with
 def call_with_four_and_increment_result(func):
     def modified(*args, **kwargs):
         return func(4) + 1
-
     return modified
 
-```
+```{{execute}}
 
 And a quick test:
 

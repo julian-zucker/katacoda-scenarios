@@ -19,6 +19,7 @@ def print_test(func):
         print('decorator used')
         return func(*args, **kwargs)
     return modified
+
 ```{{execute}}
 
 So, this function will print `'decorator used'` and then return whatever the
@@ -32,6 +33,7 @@ We can test our decorator by first defining a decorated function:
 @print_test
 def f(x):
     return x + 3
+
 ```{{execute}}
 
 And then calling that function:
