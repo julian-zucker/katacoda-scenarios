@@ -7,6 +7,7 @@ to apply the function, and `islice` to take the first `n`, like so:
 ```
 def tabulate(function, n):
     return islice(map(function, count()), n)
+
 ```{{execute}}
 
 And a test:
@@ -20,11 +21,12 @@ We could also do this with range and a list comprehension:
 ```
 def tabulate2(function, n):
     return (function(n) for i in range(n))
+
 ```{{execute}}
 
 We can test this, which will reveal the bug:
 ```
-list(tabulate(lambda x: x + 1, 4))
+list(tabulate2(lambda x: x + 1, 4))
 ```{{execute}}
 
 Up above, it should say `return (function(i) ...` instead of `return
@@ -56,6 +58,7 @@ First, an example function:
 ```
 def func(x, y, z):
     return (x, y, z, x + y + z)
+
 ```{{execute}}
 
 And now, we can develop the n-dimensional tabulate.
@@ -67,6 +70,7 @@ def tabulate_n_dimensional(function, *dimensions):
     # [(0, 0, 0), (0, 0, 1), ...
     inputs = product(*dimension_ranges)
     return starmap(function, inputs)
+
 ```{{execute}}
 
 Let's test this:

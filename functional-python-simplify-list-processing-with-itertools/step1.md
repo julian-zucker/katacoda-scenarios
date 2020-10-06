@@ -18,6 +18,7 @@ And then let's define that function!
 ```
 def add_three(x):
     return x + 3
+
 ```{{execute}}
 
 Now that we have this function, let's write down the list we want to apply it
@@ -59,12 +60,13 @@ function!
 ```
 def is_lowercase(str):
     return str.islower()
+
 ```{{execute}}
 
 This may seem like a silly function to write, because all it does is call one
 other method, but filter requires a function, not a method, so we have to write it.
 
-Let's just define our array of strings 
+Let's just define our array of strings
 ```
 arr = ["low", "HIGH", "MiXeD"]
 ```{{execute}}

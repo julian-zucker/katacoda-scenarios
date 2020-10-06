@@ -22,7 +22,7 @@ range if two numbers are provided.
 
 
 ```
-list(islice(repeat(10, 10), 3)
+list(islice(repeat(10, 10), 3))
 ```{{execute}}
 
 Here, we take only the first three elements from the `repeat` object, which
@@ -30,7 +30,7 @@ would have 10 elements otherwise. And, we can take the fourth through seventh
 objects just as easily:
 
 ```
-list(islice(repeat(10, 10), 4, 7)
+list(islice(repeat(10, 10), 4, 7))
 ```{{execute}}
 
 Although because it's all 10's, there is no difference between the two. Now that
