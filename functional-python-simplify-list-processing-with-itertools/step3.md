@@ -48,8 +48,7 @@ list(starmap(max, [[1, 2, 3], [4, 5, 6]]))
 ```{{execute windows}}
 
 Max is being called on `max(1, 2, 3)`, then `max(4, 5, 6)`, even though the
-list contains arrays. If we just used `map`, it would get called like `max([1,
-2, 3])`, which would cause errors.
+list contains arrays. If we just used `map`, it would get called like `max([1, 2, 3])`, which would cause errors.
 
 We can use starmap to tabulate the given function over three different numbers at
 once.
