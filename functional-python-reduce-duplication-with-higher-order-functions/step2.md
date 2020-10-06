@@ -7,6 +7,7 @@ def make_adder(n):
     def adder(x):
         return x + n
     return adder
+
 ```{{execute}}
 
 Okay, let's break down that code snippet. `make_adder` takes one parameter,
@@ -24,14 +25,14 @@ add_four = make_adder(4)
 And then we can use the function we created!
 
 ```
-assert add_four(0) == 8
+assert add_four(0) == 4
 assert add_four(4) == 8
 ```{{execute}}
 
 We can even call it directly after creating it, if we want:
 
 ```
-assert make_adder(10)(30) == 4
+assert make_adder(10)(30) == 40
 ```{{execute}}
 
 Now we know how to define higher-order functions that return functions. What

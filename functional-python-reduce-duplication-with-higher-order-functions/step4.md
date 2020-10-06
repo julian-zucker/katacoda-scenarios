@@ -33,6 +33,7 @@ data = [
         "salary": "123",
     },
 ]
+```{{execute}}
 
 
 And we have a few operations we want to do in order to filter and clean the
@@ -51,24 +52,28 @@ Ignore any person with an empty name
 ```
 def has_empty_name(person):
     return person['name'] == ''
+
 ```{{execute}}
 
 Ignore any person with an age over 100
 ```
 def has_age_over_100(person):
     return person['age'] > 100
+
 ```{{execute}}
 
 Make sure ages are numbers, not strings
 ```
 def convert_age_to_number(person):
     person['age'] = float(person['age'])
+
 ```{{execute}}
 
 Make sure salaries are numbers, not strings
 ```
 def convert_salary_to_number(person):
     person['salary'] = float(person['salary'])
+
 ```{{execute}}
 
 Convert salaries which are less than $1000 from hourly rates to yearly
@@ -77,6 +82,7 @@ def convert_salary_to_yearly(person):
     if person['salary'] < 1000:
         # 2000 work hours in the year, roughly
         person['salary'] = 2000 * person['salary']
+
 ```{{execute}}
 
 Okay, so we have these five tiny functions which do parts of what we want. How
@@ -98,7 +104,6 @@ def clean_data(data, cleaners, filters):
     for item in data:
         for cleaner_func in cleaners:
             cleaner_func(item)
-
     # then keep only the good data
     out = []
     for item in data:
@@ -107,7 +112,6 @@ def clean_data(data, cleaners, filters):
             if not filter(item):
                 break
         out.append(item)
-
     return out
 ```{{execute}}
 

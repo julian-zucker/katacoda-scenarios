@@ -8,6 +8,7 @@ Now, let's define a function.
 ```
 def add_two(x):
     return x + 2
+
 ```{{execute}}
 
 This is a pretty simple function. It takes a number `x` and returns that

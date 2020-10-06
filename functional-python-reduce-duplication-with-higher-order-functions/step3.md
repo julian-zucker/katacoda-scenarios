@@ -8,7 +8,7 @@ the parameters is different. Let's give it a shot by writing a function
 argument `arg`.
 
 ```
-def apply(f, arg);
+def apply(f, arg):
     return f(arg)
 
 assert apply(add_three, 4) == 7
@@ -33,7 +33,6 @@ def filter_map(arr, predicate, mapper):
         if predicate(item):
             new_item = mapper(item)
             out.append(new_item)
-
     return out
 
 assert filter_map([1,2,3,4], lambda x: x > 2, add_three) == [6, 7]
