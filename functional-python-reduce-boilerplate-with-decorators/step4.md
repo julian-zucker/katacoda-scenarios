@@ -3,7 +3,7 @@ just like every other function. This means that we can control what data gets
 passed in, and modify what the wrapped function returns.
 
 For example, here's a decorator which always calls its wrapped function with
-4, regardless of what the input is. It also adds one to the output
+4, regardless of what the input is. It also adds one to the output:
 
 ```
 def call_with_four_and_increment_result(func):
