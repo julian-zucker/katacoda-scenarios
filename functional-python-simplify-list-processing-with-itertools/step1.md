@@ -6,8 +6,7 @@ true. Let's play around with them both to get familiar.
 First, `map`. Suppose we have a list of numbers, and we want to add 3 to each of
 them. How could we achieve that? Well, map will let us apply a function to
 each element of the list. What function do we want to apply? The function that
-will add 3. Let's start up python:
-
+will add 3. Let's start up Python:
 
 ```
 python3
@@ -30,7 +29,6 @@ arr = [1, 2, 3, 4]
 
 Finally, we can use `map` to apply the function to each element:
 
-
 ```
 map(add_three, arr)
 ```{{execute windows}}
@@ -41,7 +39,6 @@ operations on the resulting object. For example, if you map over a list twice,
 you might not want the intermediate list to be created, if you can just apply
 the two functions to each element in one pass. We can fix this by wrapping it
 all in a call to `list`, to convert the type again.
-
 
 ```
 list(map(add_three, arr))
@@ -64,9 +61,9 @@ def is_lowercase(str):
 ```{{execute windows}}
 
 This may seem like a silly function to write, because all it does is call one
-other method, but filter requires a function, not a method, so we have to write it.
+other method, but `filter` requires a function, not a method, so we have to write it.
 
-Let's just define our array of strings
+Let's just define our array of strings:
 ```
 arr = ["low", "HIGH", "MiXeD"]
 ```{{execute windows}}
@@ -77,12 +74,11 @@ And then we can filter, keeping only the lowercase ones:
 filter(is_lowercase, arr)
 ```{{execute windows}}
 
-Oops! Same deal as above – this is a generator, so we'll have to convert it to
+Oops! Same deal as above–this is a generator, so we'll have to convert it to
 a list to see the contents.
 ```
 list(filter(is_lowercase, arr))
 ```{{execute windows}}
 
-
-And just like that, we know how to use filter and map! In the next step, we'll
+And just like that, we know how to use `filter` and `map`! In the next step, we'll
 focus on ways to create iterators.
