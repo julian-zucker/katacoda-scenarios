@@ -16,10 +16,9 @@ list(repeat(10, 3))
 ```{{execute windows}}
 
 We still have to wrap the output in `list` in order to see the elements, but
-it is clear that the above code repeats 10 three times. Next let's move on to
+it is clear that this code repeats 10 three times. Next, let's move on to
 `islice`, which slices an iterator, taking only the first `n` elements, or a
-range if two numbers are provided.
-
+range, if two numbers are provided.
 
 ```
 list(islice(repeat(10, 10), 3))
@@ -33,22 +32,22 @@ objects just as easily:
 list(islice(repeat(10, 10), 4, 7))
 ```{{execute windows}}
 
-Although because it's all 10's, there is no difference between the two. Now that
+Although because it's all 10s, there is no difference between the two. Now that
 we know how to get elements out of an iterator, we can start playing with
 infinite iterators.
 
 One way of creating an infinite iterator is `count`. `count` starts at
 whatever number you give it, and gives you back an iterator with that number
 as the first element, that number plus one as the second element, plus two,
-plus three, and so one. Let's try it out
+plus three, and so on. Let's try it out:
 
 ```
 list(islice(count(10), 12))
 ```{{execute windows}}
 
 Even though the iterator is technically infinite, it won't cause any problems
-if we only take a fixed number of elements with islice. If we tried to write a
-for loop that went over the whole thing, however, it would run forever.
+if we only take a fixed number of elements with `islice`. If we tried to write a
+`for` loop that went over the whole thing, however, it would run forever.
 
 Another method for making infinite generators is `cycle`. `cycle` takes in an
 iterable (like a string or an array) and produces an iterator that cycles
@@ -58,11 +57,11 @@ through its elements.
 list(islice(cycle("ABCD"), 12))
 ```{{execute windows}}
 
-The above code repeats the letters of `"ABCD"`, and take the first 12 of them.
+This code repeats the letters of `"ABCD"`, and takes the first 12 of them.
 
 Once you have a finite iterable, you can combine its elements to make new
 iterators. One of the "combinatoric" iterators is called `product`. It
-produces the cartesian produce of two iterators, creating every pair
+produces the Cartesian produce of two iterators, creating every pair
 containing one element of the first iterator and one element of the second
 iterator. Here's an example:
 
@@ -94,7 +93,7 @@ list(combinations("ABCDE", r=2))
 
 These combinators are useful for double-checking your combinatorics math
 homework, and also seeing if any combination of elements has a certain
-property, which can be useful in several leetcode exercises.
+property, which can be useful in several LeetCode exercises.
 
 That's a lot of ways to create iterables! With this knowledge under our belts,
 we can move to the next step, where we will dive into ways to use iterables.
