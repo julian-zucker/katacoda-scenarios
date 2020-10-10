@@ -3,7 +3,7 @@ function it decorates is called. First, let's write the decorator, then we can
 use it on some functions.
 
 First, run the following code snippet by clicking on it, in order to start
-python.
+Python.
 
 ```
 python3
@@ -22,7 +22,7 @@ def print_test(func):
 
 ```{{execute windows}}
 
-So, this function will print `'decorator used'` and then return whatever the
+This function will print `'decorator used'` and then return whatever the
 function it is decorating returned. The `*args, **kwargs` bit means that
 whatever inputs you provided (arguments or keyword arguments) will be passed
 to the inner function.
@@ -42,5 +42,5 @@ And then calling that function:
 f(4)
 ```{{execute windows}}
 
-Okay, awesome! That's a basic decorator, which wraps a function and modifies
-it! In the next section, we will write a more useful decorator.
+Great! That's a basic decorator, which wraps a function and modifies
+it. In the next section, we will write a more useful decorator.
