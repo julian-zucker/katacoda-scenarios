@@ -25,14 +25,14 @@ list(islice(repeat(10, 10), 3))
 ```{{execute windows}}
 
 Here, we take only the first three elements from the `repeat` object, which
-would have 10 elements otherwise. And, we can take the fourth through seventh
+would have 10 elements otherwise. We can also take the fourth through seventh
 objects just as easily:
 
 ```
 list(islice(repeat(10, 10), 4, 7))
 ```{{execute windows}}
 
-Although because it's all 10s, there is no difference between the two. Now that
+However, because it's all 10s, there is no difference between the two. Now that
 we know how to get elements out of an iterator, we can start playing with
 infinite iterators.
 
@@ -49,7 +49,7 @@ Even though the iterator is technically infinite, it won't cause any problems
 if we only take a fixed number of elements with `islice`. If we tried to write a
 `for` loop that went over the whole thing, however, it would run forever.
 
-Another method for making infinite generators is `cycle`. `cycle` takes in an
+`cycle` is another method for making infinite generators. `cycle` takes in an
 iterable (like a string or an array) and produces an iterator that cycles
 through its elements.
 
@@ -75,7 +75,7 @@ You can also get the product of an iterator with itself:
 list(product("ABC", repeat=2))
 ```{{execute windows}}
 
-Although notice that you have to specify `repeat=2` in order to get tuples
+But notice that you have to specify `repeat=2` in order to get tuples
 with two elements in them.
 
 You can also create the permutations and combinations of the elements of an
