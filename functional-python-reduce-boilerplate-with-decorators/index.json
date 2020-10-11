@@ -1,5 +1,5 @@
 {
-  "title": "Functional Python: Reduce Boilerplate with Decorators",
+  "title": "Functional Python: Reducing Boilerplate with Decorators",
   "description": "Use decorators to abstract away boilerplate pre- and post-processing",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
