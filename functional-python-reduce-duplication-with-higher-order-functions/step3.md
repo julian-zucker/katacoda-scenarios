@@ -16,14 +16,14 @@ assert apply(add_four, 8) == 12
 ```{{execute windows}}
 
 This is a pretty silly function because `apply(f, arg)` is the same as
-`f(arg)`, but it requires more typing. However, it's a useful example: we can see
+`f(arg)` (it just requires more typing). However, it's a useful example: we can see
 that `f` (the input) is being called like a normal function on another one of
 the inputs.
 
 We can do some more interesting things, though. Here's a function,
 `filter_map`, that takes a list, a predicate (which is a function that will
 return a boolean), and a mapping function, and first filters the list (keeping
-only the items in the list that make the predicate return `True`) and then
+only the list items that make the predicate return `True`) and then
 applies the mapping function to each other element:
 
 ```
@@ -47,6 +47,6 @@ def filter_map(arr, predicate, mapper):
 assert filter_map([1,2,3,4], lambda x: x > 2, add_three) == [6, 7]
 ```{{execute windows}}
 
-`filter_map` could be useful in some scenarios, but list comprehensions will
+`filter_map` could be helpful in some scenarios, but list comprehensions will
 probably be more useful. In the next step, we'll look at some more practical
 examples.
