@@ -1,6 +1,6 @@
 I've written tons of functions to process data files. Some of the time, the
 data is already formatted well; at other times, I want to modify the columns.
-Often, I do this by writing some huge Python script. But when I want to do it
+I often do this by writing some huge Python script. But when I want to do it
 right, I use a higher-order function to simplify the process.
 
 Suppose we have these dictionaries:
@@ -36,7 +36,7 @@ data = [
 ```{{execute windows}}
 
 
-And we have a few operations we want to do in order to filter and clean the
+And there are a few operations we want to do to filter and clean the
 data:
     * Ignore any person with an empty name.
     * Ignore any person with an age over 100.
@@ -44,7 +44,7 @@ data:
     * Make sure salaries are numbers, not strings.
     * Convert salaries which are less than $1,000 from hourly rates to yearly.
 
-That's a lot of tasks, and doing it to each element will get pretty difficult
+That's a lot of tasks, and doing them for each element will get pretty difficult
 to follow. Let's start by writing functions that can do each of those things
 one at a time, and then work on combining them with a higher-order function.
 
@@ -88,15 +88,15 @@ def convert_salary_to_yearly(person):
 So we have these five tiny functions which do parts of what we want. How
 can we convert them into something that does all this work on this data?
 
-Well, first we'll want to do a pass where we make sure that the fields are
+First we'll want to do a pass where we make sure that the fields are
 correct (convert ages and salaries to numbers, then convert hourly salaries to
 yearly). Then, we'll want to filter out the bad data (empty name or age too
 high). The reason for the ordering is that our age checker requires that the
 person has an age that is a number, so I want to convert ages to numbers first.
 
-This function will take in a list of cleaners, which is the name I picked for
-functions that clean up the data by modifying it. Then, it will take a list of
-filters, or functions that determine if we want to keep them.
+This function will take in a list of `cleaners` (this is the name I picked for
+functions that clean up the data by modifying it). Then, it will take a list of
+`filters`, or functions that determine if we want to keep them.
 
 ```
 def clean_data(data, cleaners, filters):
@@ -125,5 +125,5 @@ clean_data(data,
 
 This function is easy to understand, and so are all the helpers. And, if you
 want to clean the data with a different set of cleaners or filters, it's very
-easy to extend this code. People can use it on lots of different datasets
+easy to extend this code. You can use it on lots of different datasets
 with minimal code copying. I'd call that a success!
