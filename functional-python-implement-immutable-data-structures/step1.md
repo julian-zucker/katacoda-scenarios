@@ -1,5 +1,5 @@
-Mutable data structures can be "mutated," or changed. Immutable data
-structures cannot be changed. This is useful for parallel programming, where
+_Mutable data structures_ can be "mutated," or changed. _Immutable data
+structures_ cannot be changed. This is useful for parallel programming, where
 you want to prevent multiple people from modifying a piece of data at the same time, and in preventing bugs.
 
 Before we dive into coding things, run `python3`{{execute windows}} so that we can use Python. (You can run things by clicking on the text.)
