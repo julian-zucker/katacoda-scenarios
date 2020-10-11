@@ -12,7 +12,7 @@ def add_two(x):
 ```{{execute windows}}
 
 This is a pretty simple function. It takes a number `x` and returns that
-number plus two. We can test it with some assertions:
+number plus 2. We can test it with some assertions:
 
 ```
 assert add_two(0) == 2
@@ -23,7 +23,7 @@ assert add_two(1) == 3
 given to them is truthy, and they will raise an AssertionError otherwise.)
 
 So we have this function. Let's define and test a similar function,
-which adds three:
+which adds 3:
 
 ```
 def add_three(x):
