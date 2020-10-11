@@ -4,7 +4,7 @@ allows you to keep only the elements of the list that make a function return
 true. Let's play around with them both to get familiar.
 
 First, `map`. Suppose we have a list of numbers, and we want to add 3 to each of
-them. How could we achieve that? Well, map will let us apply a function to
+them. How could we achieve that? Well, `map` will let us apply a function to
 each element of the list. What function do we want to apply? The function that
 will add 3. Let's start up Python:
 
@@ -44,11 +44,11 @@ all in a call to `list`, to convert the type again.
 list(map(add_three, arr))
 ```{{execute windows}}
 
-Much better, this is looking more like what I would expect. Anyway, that's how
-to use map! Next, on to `filter`.
+Much better: this is looking more like what I would expect. That's how
+to use `map`! Next, on to `filter`.
 
-Suppose you have a list of strings, but you only want the ones which are
-lowercase. With filter, all you have to do is find or create a function which returns
+Suppose you have a list of strings, but you only want the ones that are
+lowercase. With filter, all you need to do is find or create a function that returns
 `True` for the elements you want to keep, and returns `False` for the elements
 that you don't want to keep. In our case, we will want to keep lowercase
 strings and not keep strings with uppercase letters, so let's write that
