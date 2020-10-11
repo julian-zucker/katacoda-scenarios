@@ -4,7 +4,7 @@ ahead and import it:
 `from typing import NamedTuple`{{execute windows}}
 
 Now, what is a `NamedTuple`? It's a class you can extend, and it makes a
-constructor for you. Let's create a simple class Animal, with an age and a
+constructor for you. Let's create a simple class, `Animal`, with an age and a
 name.
 
 ```
