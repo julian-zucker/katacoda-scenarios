@@ -1,4 +1,4 @@
-Decorators are functions like any other. And the functions they wrap are also
+Decorators are like any other function, and the functions they wrap are also
 just like every other function. This means that we can control what data gets
 passed in, and modify what the wrapped function returns.
 
