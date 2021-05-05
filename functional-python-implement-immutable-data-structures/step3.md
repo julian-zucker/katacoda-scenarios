@@ -48,7 +48,7 @@ class Order(NamedTuple):
     order_id: int
     items: Tuple[Item]
     def total_price(self):
-        return sum(item.price for item in items)
+        return sum(item.price for item in self.items)
 
 assert Order(2, (coffee, biscotti)).total_price() == 675
 ```{{execute windows}}
