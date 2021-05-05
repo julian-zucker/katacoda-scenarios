@@ -1,5 +1,5 @@
 This step will introduce a problem to motivate the use of higher-order
-functions. First, let's get a python shell running:
+functions. First, let's get a Python shell running:
 
 `python`{{execute windows}}
 
@@ -12,7 +12,7 @@ def add_two(x):
 ```{{execute windows}}
 
 This is a pretty simple function. It takes a number `x` and returns that
-number plus two. We can test it with some assertions:
+number plus 2. We can test it with some assertions:
 
 ```
 assert add_two(0) == 2
@@ -22,8 +22,8 @@ assert add_two(1) == 3
 (If you haven't seen assertions before: they won't do anything if the value
 given to them is truthy, and they will raise an AssertionError otherwise.)
 
-Okay, so we have this function. Let's define and test a similar function,
-which adds three:
+So we have this function. Let's define and test a similar function,
+which adds 3:
 
 ```
 def add_three(x):
@@ -33,9 +33,8 @@ assert add_three(0) == 3
 assert add_three(100) == 103
 ```{{execute windows}}
 
-
 These two functions are quite similar. While they are pretty small and were
-easy to write, if we had to write dozens or hundereds of similar functions, it
+easy to write, if we had to write dozens or hundreds of similar functions, it
 would get tiring pretty fast!
 
 This is where higher-order functions come in.

@@ -10,10 +10,10 @@ def make_adder(n):
 
 ```{{execute windows}}
 
-Okay, let's break down that code snippet. `make_adder` takes one parameter,
+OK, let's break down that code snippet. `make_adder` takes one parameter,
 `n`, and then uses that parameter in a function it defines. The function
-`adder`, which is defined locally withing `make_adder`, stores that value of
-n. `adder` is returned, and adder is a function that takes a number `x` and
+`adder`, which is defined locally within `make_adder`, stores that value of
+`n`. `adder` is returned, and `adder` is a function that takes a number `x` and
 adds `n` to it. Success!
 
 How do we use this thing, though? Well, it's a function, so we can call it:
