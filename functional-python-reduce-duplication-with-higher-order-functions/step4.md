@@ -107,11 +107,14 @@ def clean_data(data, cleaners, filters):
     # then keep only the good data
     out = []
     for item in data:
+        should_append = True
         for filter in filters:
             # don't add this item if the filter returns False
             if not filter(item):
-                break
-        out.append(item)
+                should_append = False
+
+        if should_append:
+            out.append(item)
     return out
 ```{{execute windows}}
 
