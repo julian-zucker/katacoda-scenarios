@@ -1,1 +1,1 @@
-cd /root && python3 -c "import step1; assert step1.get_dog({'dog': 'asdf'}) == 'asdf';"
+python3 -c "import step1; assert step1.get_dog({'dog': 'asdf'}) == 'asdf';"
