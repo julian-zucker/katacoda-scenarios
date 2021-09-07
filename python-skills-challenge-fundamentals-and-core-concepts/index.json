@@ -35,6 +35,7 @@
     }
   },
   "environment": {
+    "hideHiddenFiles": true,
     "uilayout": "vscode-terminal-split"
   },
   "assets": {
@@ -43,6 +44,6 @@
       ]
   },
   "backend": {
-    "imageid": "python:3.6"
+      "imageid": "ubuntu:2004"
   }
 }
