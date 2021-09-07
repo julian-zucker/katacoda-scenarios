@@ -1,1 +1,1 @@
-python -c "import assets.step1; assert step1.get_dog({'dog': 'asdf'}) == 'asdf'; assert step1.get_dog({}) == None;"
+cd /root && python3 -c "import step1; assert step1.get_dog({'dog': 'asdf'}) == 'asdf';"
