@@ -1,0 +1,1 @@
+In this scenario, you will continue developing the Markov class from before. You will add additional functionality to make predictions based on more than just the previous letter.
