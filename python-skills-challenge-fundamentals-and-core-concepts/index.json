@@ -32,16 +32,16 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { "file": "*", "target": "~/" }
+      ]
     }
   },
   "environment": {
     "hideHiddenFiles": true,
-    "uilayout": "vscode-terminal-split"
-  },
-  "assets": {
-      "client": [
-          { "file": "*", "target": "~/" }
-      ]
+    "uilayout": "editor"
   },
   "backend": {
       "imageid": "ubuntu:2004"
