@@ -1,1 +1,1 @@
-python -c "import assets.step2; assert assets.step2.get_table('abcbcb') == {'a': {'b': 1}, 'b': {'c': 2}, 'c': {'b': 2}}"
+python3 -c "import step3.Markov; assert {Markov('cdcdcdcc').predict('c') for _ in range(1000)} == {'c', 'd'}"

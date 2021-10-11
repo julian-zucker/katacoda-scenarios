@@ -13,7 +13,7 @@ def get_table(txt):
 
 We can build up this function over multiple steps. First, let's make it just return a dictionary at all:
 
-```python
+```python3
 def get_table(txt):
     """This function returns a dictionary such that dictionary[letter][next] is equal to 
     the number of times that `letter` came before `next` in the input `txt`.

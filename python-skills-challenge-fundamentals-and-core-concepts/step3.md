@@ -1,5 +1,13 @@
 Now that we have `get_table` defined, we can try to predict the next letter based on that.
 
+First, a recap on arrays. To add an item to an array, use the `append` method.
+```python
+x = []
+x.append(1)
+x.append(3)
+assert x == [1, 3]
+```
+
 Let's start by defining a class called `Markov` that will make predictions.
 
 ```python
@@ -36,6 +44,7 @@ class Markov:
 
 This method should return a random letter that has a transition from the given letter in the table. We can do this by building a list of possible choices, and the picking at random. If we add each letter to the list of possible choices once for each time the transition happened in the input string, we'll even have the predictions be weighted by frequency!
 
+Open `step3.py` and add the necessary line of code to insert the correct key into the possibles array. 
 ```python
 import random 
 
@@ -50,7 +59,7 @@ class Markov:
         for key in options:
             value = options[key]
             for i in range(value):
-                possibles.append(key)
+                # TODO for you
         return random.choice(possibles)
         
 ```
