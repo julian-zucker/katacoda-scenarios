@@ -26,5 +26,5 @@ We get a `KeyError`! To access keys we aren't sure about, we can use the method 
 animals.get('chicken', 'missing')
 ```
 
-Now that you know about dictionaries, fill out the body of the `get_dog` function, so that it returns whatever value is under the key `"dog"` in the input.
+Now that you know about dictionaries, open `step1.py` and fill out the body of the `get_dog` function, so that it returns whatever value is under the key `"dog"` in the input.
 

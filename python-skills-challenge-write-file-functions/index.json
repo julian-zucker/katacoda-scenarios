@@ -3,6 +3,7 @@
   "description": "Define functions and methods that operate on lists and dictionaries.",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
+   "type": "challenge@0.8",
   "details": {
     "steps": [
       {

@@ -3,6 +3,7 @@
   "description": "Writing functions that take arguments from the command line.",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
+  "type": "challenge@0.8",
   "details": {
     "steps": [
       {
