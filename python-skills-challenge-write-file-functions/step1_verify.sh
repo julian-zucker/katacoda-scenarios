@@ -1,0 +1,1 @@
+python3 -c "import step1; step1.fetch_url('http://example.com', '/tmp/example.txt')" && test -f /tmp/example.txt

@@ -22,7 +22,7 @@ class Markov:
         return random.choice(possibles)
 ```
 
-Now let's modify predict to pick the right table based on the size of its input. If it's given a single letter, it should make the prediction using the table with size 1, and if it's given three letters, it should use the table of size 3.
+Now, go ahead and open `step2.py`. Modify `predict` to pick the right table based on the size of its input. If it's given a single letter, it should make the prediction using the table with size 1, and if it's given three letters, it should use the table of size 3.
 
 ```python
 
@@ -45,13 +45,3 @@ class Markov:
                 possibles.append(key)
         return random.choice(possibles)
 ```
-
-Now, let's test this new predict method:
-
-```python
-m = Markov('abcbc', size=2)
-print(m.predict('a'))
-print(m.predict('ab'))
-```
-
-Looks like it's working for all sizes!

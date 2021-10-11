@@ -1,1 +1,1 @@
-grep -c 'transitions.setdefault.*next' step4.py && grep -c -v "transitions\[next\]" step4.py
+grep -c 'transitions.setdefault.*next' step4.py && grep -c -v "transitions\[next\] = 1" step4.py

@@ -1,0 +1,1 @@
+python3 -c "import step1; assert step1.get_table('abcdeefdsf', 2) == {'ab': {'c': 1}, 'bc': {'d': 1}, 'cd': {'e': 1}, 'de': {'e': 1}, 'ee': {'f': 1}, 'ef': {'d': 1}, 'fd': {'s': 1}, 'ds': {'f': 1}}"

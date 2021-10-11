@@ -1,0 +1,1 @@
+grep -c 'except IndexError' step1.py

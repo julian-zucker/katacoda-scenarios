@@ -19,4 +19,4 @@ data = file_in.read()
 print(data)
 ```
 
-With this knowledge in handle, we can start extending our Markov class.
+Now that you know how to download data from the internet, let's modify the function `fetch_url` in `step1.py` to download data from the internet.

@@ -47,6 +47,7 @@ repl(m)
 ```
 
 If you try putting in something longer than the `size` of your markov chain, you'll see an `IndexError`, because there is no table of the right size. We'll want to handle that slightly better by adding some error handling.
+Open up `step1.py` and then add a try/except block to handle `IndexError`s and print an error message.
 
 ```python
 def repl(m):
@@ -63,4 +64,3 @@ def repl(m):
             print(prediction)
 ```
 
-The `else` block is something special to Python. The `else` block is only executed if there is no exception. We need to put the print statement in an `else` block so that we don't try to reference `prediction` before it is defined.
