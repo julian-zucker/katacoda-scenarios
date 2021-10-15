@@ -12,5 +12,5 @@ class Markov:
         for key in options:
             value = options[key]
             for i in range(value):
-                possibles.append(key)
+                # TODO for you
         return random.choice(possibles)

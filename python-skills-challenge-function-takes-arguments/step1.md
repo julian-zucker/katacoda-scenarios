@@ -48,19 +48,3 @@ repl(m)
 
 If you try putting in something longer than the `size` of your markov chain, you'll see an `IndexError`, because there is no table of the right size. We'll want to handle that slightly better by adding some error handling.
 Open up `step1.py` and then add a try/except block to handle `IndexError`s and print an error message.
-
-```python
-def repl(m):
-    print("Welcome to the REPL!")
-    print("Hit Ctrl-C to exit.")
-
-    while True:
-        txt = input("> ")
-        try:
-            prediction = m.predict(txt) 
-        except IndexError:
-            print("Too long, try again with a shorter input")
-        else:
-            print(prediction)
-```
-

@@ -45,26 +45,8 @@ class Markov:
 This method should return a random letter that has a transition from the given letter in the table. We can do this by building a list of possible choices, and the picking at random. If we add each letter to the list of possible choices once for each time the transition happened in the input string, we'll even have the predictions be weighted by frequency!
 
 Open `step3.py` and add the necessary line of code to insert the correct key into the possibles array. 
-```python
-import random 
 
-class Markov:
-    def __init__(self, txt):
-        self.table = get_table(txt)
-
-    def predict(self, letter):
-        """Predicts which letter should come after the given letter."""
-        options = self.table[letter]
-        possibles = []
-        for key in options:
-            value = options[key]
-            for i in range(value):
-                # TODO for you
-        return random.choice(possibles)
-        
-```
-
-Let's try out some predictions.
+Then try out some predictions.
 ```python
 m = Markov('abcbcbcbcbcbd')
 m.predict('a')

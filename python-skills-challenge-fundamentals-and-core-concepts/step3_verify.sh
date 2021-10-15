@@ -1,1 +1,1 @@
-python3 -c "import step3.Markov; assert {Markov('cdcdcdcc').predict('c') for _ in range(1000)} == {'c', 'd'}"
+python3 -c "from step3 import Markov; assert {Markov('cdcdcdcc').predict('c') for _ in range(1000)} == {'c', 'd'}"

@@ -1,3 +1,33 @@
+change step1.py to:
+```
+def get_table(txt, size=1):
+    """This function returns a dictionary such that dictionary[letter][next] is equal to 
+    the number of times that `letter` came before `next` in the input `txt`.
+    
+    >>>get_table('ab')
+    {'a': {'b': 1}}
+    """
+    results = {}
+    for i in range(len(txt)):
+        current = txt[i]
+        try:
+            next = txt[i+1]
+        except IndexError:
+            break
+            
+        transitions = results.get(current, {})
+        transitions.setdefault(next, 0)
+        transitions[next] += 1
+        results[current] = transitions
+        
+    return results
+```
+
+
+change step2.py to
+```python
+
+
 import random
 import sys
 
@@ -64,3 +94,4 @@ def main(txt):
 
 if __name__ == '__main__':
     main(sys.argv[1])
+```
