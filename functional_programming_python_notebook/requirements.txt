@@ -1,0 +1,2 @@
+## Please list additional packages with version numbers
+mypy-ipython==20.8.0
