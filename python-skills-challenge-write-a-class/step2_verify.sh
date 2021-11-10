@@ -1,1 +1,1 @@
-python3 -c "import step2; assert len(step2.Markov('abcdeefdsf', 2).tables) == 2"
+python3 -c "import step2; assert step2.Markov('abcdeefdsf', 2).predict('ab') == 'c'"
