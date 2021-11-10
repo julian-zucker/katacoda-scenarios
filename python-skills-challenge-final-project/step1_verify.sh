@@ -1,0 +1,1 @@
+grep -c 'fetch_url' main.py && grep -c 'from_file' main.py && grep -c 'repl' main.py && grep -c 'book_name' main.py

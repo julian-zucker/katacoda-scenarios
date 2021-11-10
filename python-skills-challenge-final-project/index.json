@@ -1,0 +1,34 @@
+{
+  "title": "Python Skills Challenge: Write File Functions",
+  "description": "Define functions and methods that operate on lists and dictionaries.",
+  "difficulty": "Intermediate",
+  "time": "10-15 minutes",
+   "type": "challenge@0.8",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md",
+        "verify": "step1_verify.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { "file": "*", "target": "~/" }
+      ]
+    }
+  },
+  "environment": {
+    "hideHiddenFiles": true,
+    "uilayout": "editor"
+  },
+  "backend": {
+    "imageid": "python:3.6"
+  }
+}
