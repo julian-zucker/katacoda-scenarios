@@ -16,7 +16,10 @@ def get_table(txt):
         transitions = results.get(current, {})
 
         # TODO replace this if statement
-        transitions.setdefault(next, 1)
+        if next not in transitions:
+            transitions[next] = 1
+        else:
+            transitions[next] += 1
         results[current] = transitions
 
     return results

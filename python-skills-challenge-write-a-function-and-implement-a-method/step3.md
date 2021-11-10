@@ -54,4 +54,5 @@ m.predict('b')
 m.predict('b')
 ```
 
-If you predict `'b'` long enough, you'll see that this code sometimes transitions to `'d'` but usually transitions to `'c'`. That's a working Markov chain!
+If you predict `'b'` long enough, you'll see that this code sometimes transitions to `'d'` but usually transitions to `'c'`. That's a working Markov chain! Open `step3.py` and make that change.
+ 

@@ -129,6 +129,6 @@ def get_table(txt):
     return results
 ```
 
-I filled in most of the function, but it's up to you to figure out what this code should do if `next` is either in or not in the transitions dictionary!
+I filled in most of the function, but it's up to you to figure out what this code should do if `next` is either in or not in the transitions dictionary! Open `step2.py` and make that change.
 
 
