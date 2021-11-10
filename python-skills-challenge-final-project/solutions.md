@@ -12,7 +12,7 @@ BOOK_URLS = {
 
 
 def main(book_name):
-    file_name = BOOK_URLS[book_name] + ".txt"
+    file_name = book_name + ".txt"
     markov.fetch_url(BOOK_URLS[book_name], file_name)
     m = markov.from_file(file_name, size=4)
     markov.repl(m)

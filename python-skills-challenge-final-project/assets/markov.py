@@ -20,8 +20,7 @@ def fetch_url(url, file_name):
     file_in = req.urlopen(url)
     data = file_in.read()
     file_out = open(file_name, mode='wb')
-    # Add a line here to write the data from the url to the file!
-
+    file_out.write(data)
     file_out.close()
 
 def get_table(txt, size=1):
@@ -33,10 +32,8 @@ def get_table(txt, size=1):
     """
     results = {}
     for i in range(len(txt)):
-        # change the next line to grab `size` characters using the [...:...] notation
         current = txt[i:i+size]
         try:
-            # change this line to grab the letter after `current` ends
             next = txt[i+size]
         except IndexError:
             break
