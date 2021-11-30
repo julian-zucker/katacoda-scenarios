@@ -23,8 +23,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "background": "configure-environment.sh",
+      "credits": "Created by Julian Zucker"
     },
+    
     "finish": {
       "text": "finish.md"
     }
