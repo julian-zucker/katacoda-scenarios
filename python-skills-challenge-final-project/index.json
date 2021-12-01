@@ -1,20 +1,15 @@
 {
-  "title": "Python Skills Challenge: Write a Class",
-  "description": "Define functions and methods that operate on lists and dictionaries.",
-  "type": "challenge@0.8",
+  "title": "Python Skills Challenge: Final Project",
+  "description": "Put everything together for a final project",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
+   "type": "challenge@0.8",
   "details": {
     "steps": [
       {
         "title": "Step 1",
         "text": "step1.md",
         "verify": "step1_verify.sh"
-      },
-      {
-        "title": "Step 2",
-        "text": "step2.md",
-        "verify": "step2_verify.sh"
       }
     ],
     "intro": {
