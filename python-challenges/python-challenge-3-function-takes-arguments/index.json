@@ -1,9 +1,9 @@
 {
-  "title": "Python Skills Challenge: Write File Functions",
-  "description": "Define functions and methods that operate on lists and dictionaries.",
+  "title": "Python Challenge: Writing Functions that Take Arguments",
+  "description": "Writing functions that take arguments from the command line.",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
-   "type": "challenge@0.8",
+  "type": "challenge@0.8",
   "details": {
     "steps": [
       {
