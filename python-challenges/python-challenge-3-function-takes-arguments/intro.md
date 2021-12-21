@@ -1,1 +1,1 @@
-In this scenario, you will develop a way to access your Markov models from the command line.
+In this challenge, you will develop a way to access your Markov models from the command line.
