@@ -57,9 +57,8 @@ def repl(m):
             print("Input too long, try again with a shorter input.")
 
 # TODO make main accept an argument called `txt`, and make a Markov based on that input.
-def main(txt):
-    m = Markov(txt)
-    repl(m)
+def main():
+    repl(...)
 
 
 if __name__ == '__main__':
