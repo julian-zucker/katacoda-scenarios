@@ -1,9 +1,9 @@
 {
-  "title": "Python Skills Challenge: Write a Class",
+  "title": "Python Challenge: Write File Functions",
   "description": "Define functions and methods that operate on lists and dictionaries.",
-  "type": "challenge@0.8",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
+   "type": "challenge@0.8",
   "details": {
     "steps": [
       {

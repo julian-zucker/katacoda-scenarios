@@ -1,4 +1,4 @@
-In this skills challenge, you will be implementing a function and a method in Python.
+In this challenge, you will be implementing a function and a method in Python.
 
 Before we start implementing that code, let's go through what we want that function and method to do.
 

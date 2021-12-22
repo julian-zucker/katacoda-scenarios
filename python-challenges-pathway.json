@@ -1,0 +1,32 @@
+{
+	"title": "Python Challenges",
+	"description": "To accompany the Getting Started with Python Interactive Course",
+	"icon": "fa-katacoda",
+	"courses": [
+		{
+			"course_id": "python-challenge-1-write-a-function-and-implement-a-method",
+			"title": "Python Challenge: Write a Function and Implement a Method",
+			"description": ""
+		},
+		{
+			"course_id": "python-challenge-2-write-a-class",
+			"title": "Python Challenge: Write a Class",
+			"description": ""
+		},
+		{
+			"course_id": "python-challenge-3-function-takes-arguments",
+			"title": "Python Challenge: Write a Function that Takes Arguments",
+			"description": ""
+		},
+		{
+			"course_id": "python-challenge-4-write-file-functions",
+			"title": "Python Challenge: Write File Functions",
+			"description": ""
+		},
+		{
+			"course_id": "python-challenge-5-final-project",
+			"title": "Getting Started with Python: Final Challenge",
+			"description": ""
+		}
+	]
+}

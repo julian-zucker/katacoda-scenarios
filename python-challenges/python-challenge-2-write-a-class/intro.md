@@ -1,0 +1,1 @@
+In this challenge, you will continue developing the Markov class we created in the preceding challenge, “Write a Function and Implement a Method”. You will add additional functionality to make predictions based on more than just the previous letter.

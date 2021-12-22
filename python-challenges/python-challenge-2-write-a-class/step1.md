@@ -1,4 +1,4 @@
-In the previous skills challenge, you wrote the function `get_table`. Let's look at that code again.
+In the previous challenge, you wrote the function `get_table`. Let's look at that code again.
 
 ```python
 def get_table(txt):
