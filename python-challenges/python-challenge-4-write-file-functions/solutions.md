@@ -43,9 +43,9 @@ def get_table(txt, size=1):
 
 class Markov:
     def __init__(self, txt, size=1):
-    self.tables = []
-    for i in range(size):
-    self.tables.append(get_table(txt, size=i+1))
+        self.tables = []
+        for i in range(size):
+        self.tables.append(get_table(txt, size=i+1))
 
     def predict(self, txt):
         """Predicts which letter should come after the given letter."""
@@ -59,8 +59,8 @@ class Markov:
 
 def from_file(file_name, size):
     with open(file_name, encoding='utf8') as file_in:
-    # Can you make this function return a Markov trained on the data in the given file?
-    return Markov(file_in.read())
+        # Can you make this function return a Markov trained on the data in the given file?
+        return Markov(file_in.read())
 
 FRANKENSTEIN_URL = "https://www.gutenberg.org/files/84/84-0.txt"
 FRANKENSTEIN_FILE_NAME = 'frankenstein.txt'
