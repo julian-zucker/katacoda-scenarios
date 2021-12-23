@@ -45,7 +45,7 @@ class Markov:
     def __init__(self, txt, size=1):
         self.tables = []
         for i in range(size):
-        self.tables.append(get_table(txt, size=i+1))
+            self.tables.append(get_table(txt, size=i+1))
 
     def predict(self, txt):
         """Predicts which letter should come after the given letter."""
