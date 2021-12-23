@@ -60,7 +60,7 @@ class Markov:
 def from_file(file_name, size):
     with open(file_name, encoding='utf8') as file_in:
         # Can you make this function return a Markov trained on the data in the given file?
-        return Markov(file_in.read())
+        return Markov(file_in.read(), size=size)
 
 FRANKENSTEIN_URL = "https://www.gutenberg.org/files/84/84-0.txt"
 FRANKENSTEIN_FILE_NAME = 'frankenstein.txt'
