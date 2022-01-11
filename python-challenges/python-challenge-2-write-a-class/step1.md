@@ -50,7 +50,7 @@ def get_table(txt, size=1):
     return results
 ```
 
-Now let's update the code to use that parameter. Instead of just getting one element at time from the string, you can use the "slice" notation to get multiple letters at once.
+Now let's update the code to use that parameter. Instead of just getting one element at a time from the string, you can use the "slice" notation to get multiple letters at once.
 ```python
 str = "abcdefg"
 str[1:3]
