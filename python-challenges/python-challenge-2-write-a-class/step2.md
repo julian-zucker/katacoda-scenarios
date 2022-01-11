@@ -1,4 +1,4 @@
-Let's add `size` to the Markov class! When a size is provided, let's make a list of all tables of all sizes from 1 up to
+Let's add `size` to the Markov class! When a size is provided, let's make a list of all tables from size 1 up to
 the given size.
 
 ```python
