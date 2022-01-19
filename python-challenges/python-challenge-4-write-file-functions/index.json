@@ -1,6 +1,6 @@
 {
   "title": "Python Challenge: Write File Functions",
-  "description": "Define functions and methods that operate on lists and dictionaries.",
+  "description": "Define functions that read and write files.",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
    "type": "challenge@0.8",

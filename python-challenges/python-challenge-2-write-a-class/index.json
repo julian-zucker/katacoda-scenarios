@@ -1,6 +1,6 @@
 {
   "title": "Python Challenge: Write a Class",
-  "description": "Define functions and methods that operate on lists and dictionaries.",
+  "description": "Write a class that can run Markov chains.",
   "type": "challenge@0.8",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
