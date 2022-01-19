@@ -1,5 +1,5 @@
-We're going to add functionality to download whole books from the Gutenberg Project, save their text to a file, and build Markov chains from a file. 
-With the function from step1, we can download a book from Project Gutenberg, like Frankenstein. Let's download that book.
+We're going to add functionality to download entire books from Project Gutenberg, save their text to a file, and build Markov chains from that file. 
+With the function from Step 1, we can download a book from Project Gutenberg, like Frankenstein. Let's download that book.
 
 ```python
 FRANKENSTEIN_URL = "https://www.gutenberg.org/files/84/84-0.txt"

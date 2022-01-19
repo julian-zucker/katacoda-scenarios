@@ -11,7 +11,7 @@ def get_table(txt):
     pass
 ```
 
-We can build up this function over multiple steps. First, let's make it just return a dictionary at all:
+We can build up this function over multiple steps. First, let's make it just return a dictionary:
 
 ```python3
 def get_table(txt):
@@ -25,7 +25,7 @@ def get_table(txt):
     return results
 ```
 
-Now, we'll want to iterate over each character in the input text, so that we can each transition to our transition table. To iterate over the indexes of a string, we can use the `range` and `len` methods, to create a range from 0 up to the length of the string.
+Now, we'll want to iterate over each character in the input text, so that we can transition each to our transition table. To iterate over the indexes of a string, we can use the `range` and `len` methods, to create a range from 0 up to the length of the string.
 
 ```python
 def get_table(txt):
@@ -41,7 +41,7 @@ def get_table(txt):
     return results
 ```
 
-But what should go in those `...`s? We want to look at this character, and the next character, and put those keys in the `results` dictionary. Let's start with a simplified version, that puts the number 1 in the transition table for transitions that exists, but doesn't know how to add beyond that.
+But what should go in those `...`s? We want to look at this character, and the next character, and put those keys in the `results` dictionary. Let's start with a simplified version that puts the number 1 in the transition table for transitions that exists, but doesn't know how to add beyond that.
 
 ```python
 def get_table(txt):
@@ -60,7 +60,7 @@ def get_table(txt):
     return results
 ```
 
-Let's test this function a little and see how it does.
+Let's test this function and see how it does.
 
 ```python
 get_table('abcbc')
@@ -95,7 +95,7 @@ And let's test it out again.
 get_table('abcbc')
 ```
 
-Sweet, it found the `a` to `b` transition! Now, we can work on increasing the count when we see the same thing multiple times. For that, we will want to check whether the transition we are writing already exists in the dictionary or not.
+Sweet, it found the `a` to `b` transition! Now, we can work on increasing the count when we see the same thing multiple times. For that, we will want to check whether the transition we are writing already exists in the dictionary.
 
 ```python
 def get_table(txt):

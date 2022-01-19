@@ -13,7 +13,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "credits": "Created by Julian Zucker"
     },
     "finish": {
       "text": "finish.md"

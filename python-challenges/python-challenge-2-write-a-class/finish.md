@@ -1,1 +1,1 @@
-In this scenario, we developed code to make Markov chains that work based on more than one letter. This will allow for better predictions down the line, as the Markov chain has more context to predict with.
+In this scenario, we developed code to make Markov chains that work based on more than one letter. This will allow for better predictions down the line, as the Markov chain now has more context with which to predict.

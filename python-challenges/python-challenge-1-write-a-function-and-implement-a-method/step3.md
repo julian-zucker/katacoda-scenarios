@@ -15,7 +15,7 @@ class Markov:
     pass
 ```
 
-This class needs to have a constructor method, so that we can give it the text that it is predicting from.
+This class needs to have a constructor method so we can give it the text that it is predicting from.
 
 ```python
 class Markov:
@@ -23,7 +23,7 @@ class Markov:
         self.table = get_table(txt)
 ```
 
-Now, we can make a `Markov`, and look at the table for its input text:
+Now, we can make a `Markov` and look at the table for its input text:
 ```python
 m = Markov('abcbc')
 m.table
@@ -42,7 +42,7 @@ class Markov:
         pass
 ```
 
-This method should return a random letter that has a transition from the given letter in the table. We can do this by building a list of possible choices, and the picking at random. If we add each letter to the list of possible choices once for each time the transition happened in the input string, we'll even have the predictions be weighted by frequency!
+This method should return a random letter that has a transition from the given letter in the table. We can do this by building a list of possible choices and then picking at random. If we add each letter to the list of possible choices, once for each time the transition happened in the input string, we'll even have the predictions be weighted by frequency!
 
 Open `step3.py` and add the necessary line of code to insert the correct key into the possibles array. 
 

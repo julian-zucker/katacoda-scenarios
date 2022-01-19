@@ -30,7 +30,7 @@ def get_table(txt):
     return results
 ```
 
-In the if statement that starts with `if current in results`, we basically want to get the value under `current`, and default to `{}` if it doesn't exist. That sounds like what `get` does, so let's rewrite it:
+In the `if` statement that starts with `if current in results`, we basically want to get the value under `current` and default to `{}` if it doesn't exist. That sounds like what `get` does, so let's rewrite it:
 
 ```python
 def get_table(txt):

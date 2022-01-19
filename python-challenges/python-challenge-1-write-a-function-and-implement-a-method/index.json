@@ -1,7 +1,7 @@
 {
   "type": "challenge@0.8",
   "title": "Python Challenge: Write a Function and Implement a Method",
-  "description": "Define functions and methods that operate on dictionaries.",
+  "description": "Define functions and methods that operate on dictionaries",
   "difficulty": "Intermediate",
   "time": "10-15 minutes",
   "details": {
@@ -28,7 +28,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+       "credits": "Created by Julian Zucker"
     },
     "finish": {
       "text": "finish.md"
